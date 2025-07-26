@@ -1,0 +1,34 @@
+.grid-books-fav {
+  margin-top: 130px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 220px));
+  gap: 12px;
+  justify-content: center; /* Alinha o grid no centro quando sobra espaço */
+  padding: 0;
+}
+
+.book-card-fav {
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* O grid define a largura */
+}
+
+
+.book-image-fav {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.description {
+  color: #000000;
+  font-family: 'inter';
+  font-size: 14px;
+}

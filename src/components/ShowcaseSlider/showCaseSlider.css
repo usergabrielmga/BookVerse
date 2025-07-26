@@ -1,0 +1,111 @@
+.content_show_case_slider {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1500px;
+    height: auto;
+    left: 50%;
+    gap: 65px;
+    transform: translateX(-50%);
+}
+
+
+.tech_slogan {
+    width: 480px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    
+}
+
+.tech_slogan h1 {
+  font-family: 'ubuntu-semiBold';
+}
+
+.tech_slogan p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.intro_slider {
+  width: auto;
+  display: flex;
+  gap: 3rem;
+  height: auto;
+}
+
+.book-intro {
+  display: flex;
+  height: auto;
+  align-items: center;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.book-intro img {
+  display: block; /* Remove espaços indesejados embaixo da imagem */
+  width: 100%; /* A imagem ocupa 100% do container (ou retire isso se quiser tamanho natural) */
+  height: auto; /* Mantém a proporção da imagem */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+}
+
+.book-intro:hover {
+  scale: 1.1;
+  transition: all 1s;
+}
+  
+
+@media(max-width: 1580px) {
+  .content_show_case_slider {
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .tech_slogan {
+    width: 100%;
+    padding-top: 50px;
+  }
+  
+}
+
+@media(max-width: 1100px) {
+  .content_show_case_slider {
+    width: 90%;
+    padding-top: 20px;
+  }
+
+  .tech_slogan h1 {
+    font-size: 26px;
+  }
+  
+  .intro_slider {
+    gap: 2px;
+  }
+}
+
+@media(max-width: 580px) {
+
+  .content_show_case_slider {
+    gap: 30px;
+  }
+
+  .book-intro:nth-child(1) {
+    display: none;
+  }
+
+  .book-intro:nth-child(3) {
+    display: none;
+  }
+  
+  .tech_slogan h1 {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+
+  
+}

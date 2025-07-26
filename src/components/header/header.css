@@ -1,0 +1,132 @@
+.header {
+    position: fixed;
+    top: 0;
+    background-color: #F7F2F2;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 0.4px 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.logo {
+    position: relative;
+    width: 138px;
+    height: 100px;
+}
+
+.nav_main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: auto;
+    gap: 30px;
+}
+
+.content_nav {
+    position: relative;
+}
+
+.content_nav ul{
+    display: flex;
+}
+
+.content_nav ul a {
+    font-family: 'ubuntu-semiBold';
+    margin: 40px;
+    color: #484242;
+    position: relative;
+}
+
+.content_nav ul a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* ajusta a distância da linha em relação ao texto */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px; /* largura da linha, você pode ajustar */
+    height: 1px;
+    background-color: #666060;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.content_nav ul a:hover::after {
+    opacity: 1;
+}
+
+.content_nav ul a:hover{
+    color: #666060;
+}
+
+.content_search {
+    display: flex;
+    right: 10%;
+}
+
+.nav_icons {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.theme-icon {
+    transition: opacity 2s ease;
+    opacity: 1;
+}
+
+.theme-icon-changing {
+    opacity: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* fundo preto com opacidade */
+  z-index: 1;
+}
+
+@media(max-width: 1200px) {
+
+    .nav_main {
+        gap: 20px;
+    }
+
+    .content_nav ul a {
+        margin: 20px;
+    }
+}
+
+@media(max-width: 900px) {
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .content_nav {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 40px;
+    }
+
+    .nav_main {
+        margin-right: 40px;
+    }
+}
+
+@media(max-width: 500px) {
+    .logo {
+        margin-left: 20px;
+    }
+
+    .nav_main {
+        margin-right: 20px;
+    }
+}
+

@@ -1,0 +1,169 @@
+.carousel {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.carousel h2 {
+  font-family: 'ubuntu-semiBold';
+}
+
+.content-carousel {
+  position: relative;
+  width: 1580px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 50px;
+}
+
+.swiper {
+    position: relative;
+    width: 100%;
+    max-width: 1380px;
+    height: 380px;
+  }
+  
+  .swiper-slide {
+    background: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000000;
+  }
+
+
+.custom-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none; /* deixa o swiper por cima */
+}
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  pointer-events: auto; /* reativa os cliques */
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border: 1px solid #000000;
+  color: #000000;
+}
+
+.swiper-button-next-custom i,
+.swiper-button-prev-custom i {
+  font-size: 30px;
+}
+
+
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  height: 100%;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.book-image {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+.btn-add-favorite {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-add-favorite:active {
+  transform: scale(1.2);
+}
+
+/* inicio responsividade */
+
+@media(max-width: 1610px) {
+
+  .content-carousel {
+    width: 1320px;
+  }
+
+  .swiper {
+    max-width: 1180px;
+    height: 280px;
+  }
+}
+
+@media(max-width: 1350px) {
+
+  .content-carousel {
+    width: 1120px;
+  }
+
+  .swiper {
+    max-width: 980px;
+  }
+}
+
+@media(max-width: 1350px) {
+
+  .content-carousel {
+    width: 910px;
+  }
+
+  .swiper {
+    max-width: 780px;
+  }
+}
+
+@media(max-width: 920px) {
+
+  .content-carousel {
+    width: 780px;
+  }
+
+  .swiper {
+    max-width: 640px;
+  }
+}
+
+/* inicio mobile */
+.grid-books {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 16px 0;
+}
+
+
+@media(max-width: 680px) {
+  .grid-books {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

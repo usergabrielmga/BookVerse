@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body.light {
+  --bg-color:  #FFF1E7;
+  --text-color: #000;
+  transition: all 1s;
+}
+
+body.dark {
+  --bg-color: #0e0c0a;
+  --text-color: rgb(255, 255, 255);
+    transition: all 1s;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+
+@font-face {
+  font-family: 'ubuntu-regular';
+  src: url('./fonts/UbuntuSans_Condensed-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'ubuntu-semiBold';
+  src: url('./fonts/UbuntuSans-SemiBold.ttf');
+}
+
