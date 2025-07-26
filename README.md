@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -52,3 +53,7 @@ export default tseslint.config({
   },
 })
 ```
+=======
+# BookVerse
+📚 Projeto Biblioteca Digital Aplicação web desenvolvida com React + TypeScript e CSS, que permite aos usuários visualizar descrições de livros, autores e gerenciar uma lista de favoritos.  
+>>>>>>> 51908df4aa1da684ba17424a0309ec5027fc7432
